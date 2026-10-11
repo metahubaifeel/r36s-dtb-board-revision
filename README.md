@@ -160,6 +160,8 @@ The project's official installation guide gives a Windows path and a manual path
 4. Copy `consoles/logo/<resolution>/logo.bmp` to the root of that partition.
 5. Unmount, put the card in the device, reboot.
 
+A note on provenance: the project builds that tool itself. Its build script produces `dtb_selector_win32.exe`, `dtb_selector_win64.exe`, macOS Intel and macOS Apple-silicon binaries into the image's `dArkOS` boot output directory. The Chinese-named `机型dtb选择，放到boot分区运行.exe` in the community pack we inspected is that same family of tool repackaged by someone else — which is worth knowing, because it means the tool and the device list it offers come from a project that publishes its source, and you can check the device list against the maintained one rather than trusting a pack.
+
 Two extra notes straight from that project, both of which explain "it still won't boot":
 
 - *"Please connect the charger before powering on. For original devices, make sure the battery voltage is above 3.3V before booting."*

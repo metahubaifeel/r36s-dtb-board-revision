@@ -155,6 +155,8 @@ MIPI-DSI 屏幕只接受它能锁定的行场时序。给一块要 Panel 4 时�
 4. 把 `consoles/logo/<分辨率>/logo.bmp` 复制到该分区根目录。
 5. 卸载 TF 卡、插回机器、重启。
 
+关于工具的来源：这个工具就是项目自己编译的。它的构建脚本会生成 `dtb_selector_win32.exe`、`dtb_selector_win64.exe`，以及 macOS Intel 和 macOS Apple silicon 版本，输出到镜像的 `dArkOS` 启动目录里。我们检查的社区包里那个中文名 `机型dtb选择，放到boot分区运行.exe`，是别人重新打包的同一类工具。这一点值得知道，因为它意味着**这个工具和它提供的设备清单来自一个公开源码的项目**——你可以拿它去对照维护中的设备清单，而不是盲信某个网盘包。
+
 项目里还有两条直接解释「为什么还是不开机」的说明，原文照抄：
 
 - *"Please connect the charger before powering on. For original devices, make sure the battery voltage is above 3.3V before booting."*
